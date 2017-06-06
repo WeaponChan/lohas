@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A2500693-1D5C-495D-A27D-77863A9697F0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>lohas</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>c1e19f51-b641-40a1-846a-53305c997e98</key>
+		<string>http://121.199.34.202/lohas</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>lohas/lohas.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>c1e19f51-b641-40a1-846a-53305c997e98</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>c1e19f51-b641-40a1-846a-53305c997e98</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>c1e19f51-b641-40a1-846a-53305c997e98</string>
+			<key>IDESourceControlWCCName</key>
+			<string>leHuo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

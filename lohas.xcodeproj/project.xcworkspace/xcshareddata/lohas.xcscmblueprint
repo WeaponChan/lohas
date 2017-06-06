@@ -1,0 +1,55 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "e6105add-c81a-42eb-ade1-d2e51a528c15++5326",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "dc355f8d-909f-4e37-a628-cfddb7c48b5c++5326" : {
+
+    },
+    "63c69527-18bd-4219-bf5a-dddbe24ffc26++6002" : {
+
+    },
+    "e6105add-c81a-42eb-ade1-d2e51a528c15++5326" : {
+
+    },
+    "c1e19f51-b641-40a1-846a-53305c997e98" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "dc355f8d-909f-4e37-a628-cfddb7c48b5c++5326" : 0,
+    "63c69527-18bd-4219-bf5a-dddbe24ffc26++6002" : 0,
+    "e6105add-c81a-42eb-ade1-d2e51a528c15++5326" : 0,
+    "c1e19f51-b641-40a1-846a-53305c997e98" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A2500693-1D5C-495D-A27D-77863A9697F0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "dc355f8d-909f-4e37-a628-cfddb7c48b5c++5326" : "lehuonew\/",
+    "63c69527-18bd-4219-bf5a-dddbe24ffc26++6002" : "",
+    "e6105add-c81a-42eb-ade1-d2e51a528c15++5326" : "%E4%B9%90%E6%B4%BB%E4%BA%8C%E6%9C%9F\/",
+    "c1e19f51-b641-40a1-846a-53305c997e98" : "leHuo"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "lohas",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "lohas\/lohas.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/114.215.191.193\/zhijian",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "63c69527-18bd-4219-bf5a-dddbe24ffc26++6002"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/121.199.34.202\/lohas",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "c1e19f51-b641-40a1-846a-53305c997e98"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.1.50\/lohas",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "dc355f8d-909f-4e37-a628-cfddb7c48b5c++5326"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/114.215.191.193\/lohas",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "e6105add-c81a-42eb-ade1-d2e51a528c15++5326"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DynamicViewController">
+            <connections>
+                <outlet property="btnAttention" destination="UCe-RK-BGs" id="LoH-0T-YIg"/>
+                <outlet property="btnDynamic" destination="K4g-0M-L75" id="6vX-EG-0jD"/>
+                <outlet property="btnFabu" destination="aRD-Hl-LaL" id="Vow-nM-eGa"/>
+                <outlet property="btnMessage" destination="BA9-3i-bhz" id="Uij-ex-f3b"/>
+                <outlet property="btnSearch" destination="h6m-cA-l3J" id="4Sl-Gq-7QH"/>
+                <outlet property="btnSend" destination="O3D-5b-aN1" id="Xcd-Je-Bhj"/>
+                <outlet property="collection" destination="P6V-yM-ypA" id="XlR-z3-VI6"/>
+                <outlet property="mDyMessageList" destination="sID-XH-Avg" id="S4t-aJ-DUz"/>
+                <outlet property="mDynamicList" destination="NTE-Yp-QR6" id="orp-Lw-S38"/>
+                <outlet property="textComment" destination="eIA-Hh-sB2" id="15Y-44-lXf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBottom" destination="nAe-ft-Z74" id="5aX-dy-G5K"/>
+                <outlet property="viewDot" destination="dLX-tf-NX1" id="0u3-52-Ak2"/>
+                <outlet property="viewHead" destination="wh8-Bt-hnh" id="C3j-o3-4tT"/>
+                <outlet property="viewStatus" destination="8Yy-XX-Gah" id="MaM-jE-8U7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Newback.png" id="dle-oT-HiG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" id="P6V-yM-ypA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="456"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="t5u-Na-gDi">
+                        <size key="itemSize" width="105" height="105"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Nyn-om-N0y"/>
+                        <outlet property="delegate" destination="-1" id="Iil-CC-Acw"/>
+                    </connections>
+                </collectionView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="NTE-Yp-QR6" customClass="DynamicList">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="456"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" id="nAe-ft-Z74">
+                    <rect key="frame" x="0.0" y="456" width="320" height="50"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="我也说一句...(不超过50个字)" textAlignment="natural" minimumFontSize="17" id="eIA-Hh-sB2">
+                            <rect key="frame" x="10" y="10" width="234" height="30"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <action selector="actEdit:" destination="-1" eventType="editingDidBegin" id="WVf-L1-y75"/>
+                                <outlet property="delegate" destination="-1" id="8pe-Ml-ieG"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" id="MVC-Pk-Vdp">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.92156862750000001" green="0.82352941180000006" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="O3D-5b-aN1">
+                            <rect key="frame" x="252" y="10" width="60" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.0" green="0.57254901960000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <state key="normal" title="发送"/>
+                            <connections>
+                                <action selector="actSend:" destination="-1" eventType="touchUpInside" id="5VR-pQ-1UG"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.72549019609999998" green="0.72549019609999998" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sID-XH-Avg" customClass="DyMessageList">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="456"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
+            <point key="canvasLocation" x="228" y="206"/>
+        </view>
+        <view contentMode="scaleToFill" id="wh8-Bt-hnh">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" id="8Yy-XX-Gah">
+                    <rect key="frame" x="45" y="6" width="210" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K4g-0M-L75">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.1647058824" green="0.55294117649999996" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="动态"/>
+                            <connections>
+                                <action selector="actDynamic:" destination="-1" eventType="touchUpInside" id="niP-fH-Cmb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BA9-3i-bhz">
+                            <rect key="frame" x="140" y="0.0" width="70" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="消息"/>
+                            <connections>
+                                <action selector="actMessage:" destination="-1" eventType="touchUpInside" id="gWw-aG-Mde"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" id="vlQ-Os-GJh">
+                            <rect key="frame" x="140" y="0.0" width="1" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.062745098040000002" green="0.20000000000000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="0LV-fe-a3i">
+                            <rect key="frame" x="70" y="0.0" width="1" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.062745098040000002" green="0.20000000000000001" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UCe-RK-BGs">
+                            <rect key="frame" x="71" y="0.0" width="69" height="32"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="关注"/>
+                            <connections>
+                                <action selector="actAttention:" destination="-1" eventType="touchUpInside" id="qKz-T1-dJo"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aRD-Hl-LaL">
+                    <rect key="frame" x="274" y="0.0" width="38" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="发布"/>
+                    <connections>
+                        <action selector="actFabu:" destination="-1" eventType="touchUpInside" id="vvz-jm-FCf"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="dLX-tf-NX1">
+                    <rect key="frame" x="252" y="9" width="10" height="10"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.18039215689999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="h6m-cA-l3J">
+                    <rect key="frame" x="282" y="6" width="38" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="navbar_search.png"/>
+                    <connections>
+                        <action selector="actSearch:" destination="-1" eventType="touchUpInside" id="0Ux-vn-1eL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="600" y="-36"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Newback.png" width="640" height="1140"/>
+        <image name="navbar_search.png" width="24" height="24"/>
+    </resources>
+</document>
